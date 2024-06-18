@@ -5,4 +5,4 @@ fun getText(): String {
 
 fun main() {
     TextMiniApp(::getText)
-}
+}te
