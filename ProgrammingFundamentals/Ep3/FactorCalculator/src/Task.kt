@@ -1,13 +1,23 @@
 import com.faangx.ktp.basics.FactorCalculatorMiniApp
 
 fun printFactorsOf(num: Int) {
-    TODO()
+    for (i in 1 .. num){
+        if (num % i == 0)      {
+            print("$i, ")
+        }
+    }
 }
 
 fun isPrime(num: Int): Boolean {
-    TODO()
+    var noOfFactors = 0
+    for (i in 1..num) {
+        if  (num % i == 0)    {
+            noOfFactors += 1
+        }
+    }
+    return noOfFactors == 2
 }
-
-fun main() {
-    FactorCalculatorMiniApp(::printFactorsOf, ::isPrime)
-}
+        fun main() {
+            FactorCalculatorMiniApp(::printFactorsOf, ::isPrime)
+        }
+    }
