@@ -11,7 +11,7 @@ fun printFactorsOf(num: Int) {
 fun isPrime(num: Int): Boolean {
     var noOfFactors = 0
     for (i in 1..num) {
-        if  (num % i == 0)    {
+        if  (num % i == 0)  {
             noOfFactors += 1
         }
     }
@@ -20,4 +20,3 @@ fun isPrime(num: Int): Boolean {
         fun main() {
             FactorCalculatorMiniApp(::printFactorsOf, ::isPrime)
         }
-    }
